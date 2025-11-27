@@ -12,12 +12,17 @@
   "dependencies": {
     "firebase": "^10.12.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-    // <-- CHECK HERE: NO trailing comma after "react-dom" if it's the last item
-  },
+    "react-dom": "^18.2.0" // <--- MUST NOT have a comma here (if it's the last item in "dependencies")
+  }, // <--- MUST have a comma here if "devDependencies" follows
   "devDependencies": {
     "@types/react": "^18.2.66",
-    "vite": "^5.2.0"
-    // <-- CHECK HERE: NO trailing comma after "vite" if it's the last item
+    "@types/react-dom": "^18.2.22", // <--- CHECK HERE: Is there a comma if another item follows?
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0" // <--- MUST NOT have a comma here
+  } // <--- MUST NOT have a comma here
   }
 }
