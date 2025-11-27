@@ -10,18 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "firebase": "^10.12.3",  <-- **MAKE SURE THIS IS PRESENT**
+    "firebase": "^10.12.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+    // <-- CHECK HERE: NO trailing comma after "react-dom" if it's the last item
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
     "vite": "^5.2.0"
+    // <-- CHECK HERE: NO trailing comma after "vite" if it's the last item
   }
 }
